@@ -274,3 +274,506 @@ body{
     font-weight: 600;
     color: #ededed;
 }
+
+/* ================= BRIEFCASE SECTION ================= */
+.briefcase {
+    min-height: 100vh;
+    width: 100%;
+    padding: 120px 10% 80px;
+    background: var(--fondo-secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 80px;
+}
+
+.briefcase-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.briefcase-section h2 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.briefcase-section h2 span {
+    color: var(--color-p);
+}
+
+/* Regla indispensable para ponerlas lado a lado */
+.briefcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.briefcase-grid > div {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid rgba(0, 238, 255, 0.2);
+    background: var(--fondo-secundario);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.briefcase-grid > div:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-p);
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.4);
+}
+
+.briefcase-grid a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.briefcase-grid img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.briefcase-grid > div:hover img {
+    transform: scale(1.05);
+}
+/* ================= EINS MODAL CUSTOM STYLES ================= */
+
+/* Fondo oscuro y desenfocado detrás de la ventana */
+.eins-modal {
+    background: rgba(4, 18, 30, 0.85) !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+/* Contenedor principal de la tarjeta */
+.eins-modal-content {
+    background: var(--fondo-secundario) !important;
+    border: 2px solid var(--color-p) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 0 35px rgba(0, 238, 255, 0.35) !important;
+    max-width: 650px !important;
+    width: 90% !important;
+    padding: 30px !important;
+    position: relative !important;
+    color: #ededed !important;
+}
+
+/* Botón de cerrar (X) alineado en la esquina */
+.eins-modal-close {
+    position: absolute !important;
+    top: 15px !important;
+    right: 20px !important;
+    color: var(--color-p) !important;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    cursor: pointer !important;
+    transition: transform 0.2s ease, color 0.2s ease !important;
+}
+
+.eins-modal-close:hover {
+    transform: scale(1.2) rotate(90deg) !important;
+    color: #fff !important;
+}
+
+/* Contenedor vertical interno */
+.pw-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Imagen de preview del proyecto */
+.eins-modal-preview img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 238, 255, 0.2);
+}
+
+/* Texto descriptivo */
+.eins-modal-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #dedede;
+    margin-bottom: 12px;
+}
+
+/* Enlace del proyecto */
+.eins-modal-text-2 {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.eins-modal-text-2 span {
+    font-weight: 700;
+    color: var(--color-p);
+}
+
+.eins-modal-text-2 a {
+    color: #fff;
+    text-decoration: underline;
+    word-break: break-all;
+    transition: color 0.3s ease;
+}
+
+.eins-modal-text-2 a:hover {
+    color: var(--color-p);
+}
+
+/* Tecnologías */
+.eins-modal-text-3 span {
+    display: block;
+    font-weight: 700;
+    color: var(--color-p);
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.eins-modal-tec {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.eins-modal-tec img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.eins-modal-tec img:hover {
+    transform: translateY(-4px);
+}
+
+.briefcase-grid a {
+    display: block;
+    cursor: pointer;
+}
+/* ================= CONTACT SECTION ================= */
+.contacts {
+    min-height: 80vh;
+    width: 100%;
+    padding: 100px 10% 60px;
+    background: var(--fondo-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 80px;
+}
+
+.contacts > h2 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contacts span {
+    color: var(--color-p);
+}
+
+.contact-panel {
+    background: var(--fondo-secundario);
+    border: 2px solid rgba(0, 238, 255, 0.2);
+    border-radius: 20px;
+    padding: 50px 30px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-panel:hover {
+    border-color: var(--color-p);
+    box-shadow: 0 0 30px rgba(0, 238, 255, 0.25);
+}
+
+.contact-panel h2 {
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.contact-subtext {
+    font-size: 16px;
+    color: #a0aec0;
+}
+
+.contact-panel .btn-me {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 40px;
+    background-color: var(--color-p);
+    color: var(--text-btn);
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.contact-panel .btn-me:hover {
+    box-shadow: 0 0 15px var(--color-p), 0 0 25px var(--color-p);
+    transform: translateY(-2px);
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 1px solid var(--color-p);
+    border-radius: 50%;
+    color: var(--color-p);
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-links a:hover {
+    transform: translateY(-5px);
+    background: var(--color-p);
+    color: var(--text-btn);
+    box-shadow: 0 0 15px var(--color-p);
+}
+/* ================= FOOTER ================= */
+footer {
+    width: 100%;
+    padding: 25px 10%;
+    background: #041826;
+    text-align: center;
+    border-top: 1px solid rgba(0, 238, 255, 0.1);
+}
+
+footer span {
+    font-size: 14px;
+    color: #8892b0;
+    letter-spacing: 0.5px;
+}
+/* ================= MODAL FORM STYLES ================= */
+.modal-form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ededed;
+}
+
+.modal-form-title span {
+    color: var(--color-p);
+}
+
+.contact-modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-p);
+}
+
+.contact-modal-form input,
+.contact-modal-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(8, 48, 77, 0.6);
+    border: 1.5px solid rgba(0, 238, 255, 0.25);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.contact-modal-form input:focus,
+.contact-modal-form textarea:focus {
+    border-color: var(--color-p);
+    box-shadow: 0 0 12px rgba(0, 238, 255, 0.35);
+}
+
+.contact-modal-form textarea {
+    resize: vertical;
+}
+
+.btn-send {
+    margin-top: 10px;
+    padding: 12px;
+    background: var(--color-p);
+    color: var(--text-btn);
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-send:hover {
+    box-shadow: 0 0 15px var(--color-p);
+    transform: translateY(-2px);
+}
+/* ================= RESPONSIVE DESIGN (MEDIA QUERIES) ================= */
+
+@media (max-width: 992px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 35px;
+        padding: 110px 5% 60px;
+        text-align: center;
+    }
+
+    .home-content {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .home-content h1 {
+        font-size: 42px;
+    }
+
+    .home-content h3 {
+        font-size: 26px;
+    }
+
+    .home-content p {
+        font-size: 17px;
+    }
+
+    .img-perfil {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about,
+    .skills,
+    .briefcase,
+    .contacts {
+        padding: 80px 5% 50px;
+    }
+
+    .about h2,
+    .knowledge-part h2,
+    .tools-part h2,
+    .briefcase-section h2,
+    .contacts > h2 {
+        font-size: 32px;
+    }
+
+    .about-info p {
+        font-size: 16px;
+    }
+
+    .briefcase-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 5%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .home {
+        padding-top: 130px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .img-perfil {
+        width: 220px;
+        height: 220px;
+    }
+
+    .knowledge,
+    .tools {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .contact-panel {
+        padding: 35px 20px;
+    }
+
+    .contact-panel h2 {
+        font-size: 24px;
+    }
+
+    .eins-modal-content {
+        padding: 20px !important;
+    }
+
+    .eins-modal-preview img {
+        height: 180px !important;
+    }
+}
