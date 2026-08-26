@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6821319000.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <a href="#" class="logo"> <span>Portafolio</span></a>
@@ -14,8 +17,8 @@
             <a href="#home">Home</a>
             <a href="#about">Acerca</a>
             <a href="#skills">Habilidades</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Contacto</a>
+            <a href="#briefcase">Portafolio</a>
+            <a href="#contacts">Contacto</a>
         </nav>
     </header>
 
@@ -27,10 +30,14 @@
                 <p>Desarrollador de software enfocado en crear aplicaciones web modernas, funcionales y escalables.</p>
             </div>
             <div class="sociales">
-                <a href="https://www.facebook.com/llover.barcelonista/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
-                <a href="https://github.com/MaxCompiler" target="_blank"><i class="fa-brands fa-github" ></i></a>
-                <a href="https://www.instagram.com/maxcompiler/" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
-                <a href="https://www.linkedin.com/in/edwin-suarez-lino/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/llover.barcelonista/?locale=es_LA" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/MaxCompiler" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/maxcompiler/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/edwin-suarez-lino/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a data-modal-id="message"><i class="fa-regular fa-envelope"></i></a>
             </div>
             <div class="btn-about">
                 <a href="#about" class="btn-me">Acerca de mi</a>
@@ -72,21 +79,19 @@
                 <h2><span>Knowledge | </span>Conocimientos</h2>
                 <div class="knowledge">
                     <div>
-                        <img src="https://cdn-icons-png.flaticon.com/512/3128/3128323.png" alt="">
+                        <img src="img/html5.webp" alt="">
                         <h3>HTML</h3>
                     </div>
                     <div>
-                        <img src="https://lineadecodigo.com/wp-content/uploads/2014/04/css.png"
-                            alt="">
+                        <img src="img/css.png" alt="">
                         <h3>CSS</h3>
                     </div>
                     <div>
-                        <img src="https://static.vecteezy.com/system/resources/previews/027/127/560/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
-                            alt="">
+                        <img src="img/javascript-logo-javascript.webp" alt="">
                         <h3>Javascript</h3>
                     </div>
                     <div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="">
+                        <img src="img/PHP-logo.svg.webp" alt="">
                         <h3>PHP</h3>
                     </div>
                 </div>
@@ -95,54 +100,151 @@
                 <h2><span>Tools | </span>Herramientas</h2>
                 <div class="tools">
                     <div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1280px-Visual_Studio_Code_1.35_icon.svg.png"
-                            alt="">
+                        <img src="img/Visual_Studio_Code.webp" alt="">
                         <h3>Visual Code</h3>
                     </div>
                     <div>
-                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png"
-                            alt="">
+                        <img src="img/github.png" alt="">
                         <h3>GitHub</h3>
                     </div>
                     <div>
-                        <img src="https://images.icon-icons.com/2415/PNG/512/git_original_logo_icon_146509.png"
-                            alt="">
+                        <img src="img/git.webp" alt="">
                         <h3>Git</h3>
                     </div>
                     <div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1280px-Laravel.svg.png"
-                            alt="">
+                        <img src="img/Laravel.svg.webp" alt="">
                         <h3>Laravel</h3>
                     </div>
                     <div>
-                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/webpack-icon.png"
-                            alt="">
+                        <img src="img/webpack-icon.webp" alt="">
                         <h3>Webpack</h3>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </section>
 
     <section class="briefcase" id="briefcase">
-        <div class="briefcase-section container">
+        <div class="briefcase-section ">
             <h2><span>Briefcase | </span> Portafolio</h2>
             <div class="briefcase-grid">
                 <div>
-                    <a href="https://reloj-digital-maxc.netlify.app/"><img
-                            src="img/reloj-digital.jpeg"
-                            alt=""></a>
+                    <a data-modal-id="pw-reloj"><img src="img/reloj-digital.jpeg" alt=""></a>
                 </div>
                 <div>
-                    <a href="https://weather-app-maxc.netlify.app/"><img
-                            src="img/wather-app.png"
-                            alt=""></a>
+                    <a data-modal-id="pw-weather"><img src="img/wather-app.png" alt=""></a>
                 </div>
-                
+
             </div>
         </div>
     </section>
-    
+
+    <section id="contacts" class="contacts">
+        <h2><span>Contact | </span>Contacto</h2>
+        <div class="contact-panel panel reveal-on-scroll">
+            <h2>¿Tienes un proyecto en mente? Hablemos.</h2>
+            <p class="contact-subtext">Envíame un mensaje directo o contáctame a través de mis redes.</p>
+
+            <a data-modal-id="message" class="btn-me">Enviar un Mensaje</a>
+
+            <div class="contact-links">
+                <a href="https://github.com/MaxCompiler" target="_blank" title="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/edwin-suarez-lino/" target="_blank" title="LinkedIn"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/maxcompiler/" target="_blank" title="Instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/llover.barcelonista/?locale=es_LA" target="_blank" title="Facebook"><i
+                        class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>&copy; 2026 Edwin Suarez Lino</span>
+    </footer>
+
+    <!-- ================= MODAL: RELOJ ================= -->
+    <div id="pw-reloj" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview">
+                    <img src="img/reloj-digital.jpeg" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Aplicación web interactiva de reloj digital en tiempo real con diseño moderno, visualización de
+                        fecha completa y efectos de iluminación neón.
+                    </p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLANCE: </span> <a
+                            href="https://reloj-digital-maxc.netlify.app/">https://reloj-digital-maxc.netlify.app/</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologia usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="img/html5.webp" alt="">
+                            <img src="img/css.png" alt="">
+                            <img src="img/javascript-logo-javascript.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= MODAL: WEATHER APP ================= -->
+    <div id="pw-weather" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview">
+                    <img src="img/wather-app.png" alt="Weather App">
+                </div>
+                <div class="eins-modal-text">
+                    <p>
+                        Aplicación del clima que consulta pronósticos meteorológicos en tiempo real consumiendo una API
+                        externa, con búsqueda dinámica por ciudad e historial de consultas persistente.
+                    </p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE: </span>
+                        <a href="https://weather-app-maxc.netlify.app/"
+                            target="_blank">https://weather-app-maxc.netlify.app/</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="img/html5.webp" alt="HTML5" title="HTML5">
+                            <img src="img/css.png" alt="CSS3" title="CSS3">
+                            <img src="img/javascript-logo-javascript.webp" alt="JavaScript" title="JavaScript">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= MODAL: MESSAGE / FORM ================= -->
+    <div id="message" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <h3 class="modal-form-title">Envíame un <span>mensaje</span></h3>
+            <form action="https://formspree.io/f/maewbovb" method="POST" class="contact-modal-form">
+                <div class="form-group">
+                    <label for="email">Tu Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="msg">Tu Mensaje:</label>
+                    <textarea id="msg" name="message" rows="4" placeholder="Escribe tu mensaje aquí..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn-send">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
 </html>
