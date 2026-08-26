@@ -9,29 +9,31 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Portafolio</a>
+        <a href="#" class="logo"> <span>Portafolio</span></a>
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">Acerca</a>
-            <a href="#">Habilidades</a>
+            <a href="#home">Home</a>
+            <a href="#about">Acerca</a>
+            <a href="#skills">Habilidades</a>
             <a href="#">Portafolio</a>
             <a href="#">Contacto</a>
         </nav>
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <div class="description">
-                <h3>Hola mi nombre es </h3>
+                <h3>Hola, mi nombre es</h3>
                 <h1>Edwin Suarez Lino</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore cupiditate ab, facilis animi dolores a magnam voluptates doloremque, <br>
-                ducimus molestiae facere suscipit nihil quibusdam rerum placeat maxime exercitationem illum nam?</p>
+                <p>Desarrollador de software enfocado en crear aplicaciones web modernas, funcionales y escalables.</p>
             </div>
             <div class="sociales">
-                <a href="#"><i class="fa-brands fa-facebook" style="color: rgb(65, 70, 74);"></i></a>
-                <a href="#"><i class="fa-brands fa-github" style="color: rgb(65, 70, 74);"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(65, 70, 74);"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in" style="color: rgb(65, 70, 74);"></i></a>
+                <a href="https://www.facebook.com/llover.barcelonista/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
+                <a href="https://github.com/MaxCompiler" target="_blank"><i class="fa-brands fa-github" ></i></a>
+                <a href="https://www.instagram.com/maxcompiler/" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
+                <a href="https://www.linkedin.com/in/edwin-suarez-lino/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="btn-about">
+                <a href="#about" class="btn-me">Acerca de mi</a>
             </div>
         </div>
         <div class="home-img">
@@ -40,6 +42,106 @@
             </div>
         </div>
 
+    </section>
+
+    <section class="about" id="about">
+        <h2><span>About | </span>Sobre mi</h2>
+        <div class="about-flex container">
+            <div class="about-info">
+                <p>
+                    Soy Edwin Suárez Lino, estudiante de Ingeniería de Software en séptimo
+                    semestre. A lo largo de mi formación he desarrollado habilidades sólidas
+                    en programación y desarrollo web. He trabajado con diferentes tecnologías
+                    y lenguajes, consolidando mis conocimientos en conceptos fundamentales de
+                    la ingeniería de software.
+                </p>
+                <p>
+                    Estoy comprometido con mi crecimiento profesional y dedico tiempo a
+                    fortalecer mis competencias técnicas mediante proyectos personales y
+                    académicos. Mi objetivo es ser un desarrollador competente que contribuya
+                    con soluciones de calidad en el mundo laboral.
+                </p>
+                <a href="cv-edwin-suarez.pdf" download class="btn-cv">Descargar CV en PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skill container">
+            <div class="knowledge-part">
+                <h2><span>Knowledge | </span>Conocimientos</h2>
+                <div class="knowledge">
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/3128/3128323.png" alt="">
+                        <h3>HTML</h3>
+                    </div>
+                    <div>
+                        <img src="https://lineadecodigo.com/wp-content/uploads/2014/04/css.png"
+                            alt="">
+                        <h3>CSS</h3>
+                    </div>
+                    <div>
+                        <img src="https://static.vecteezy.com/system/resources/previews/027/127/560/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
+                            alt="">
+                        <h3>Javascript</h3>
+                    </div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="">
+                        <h3>PHP</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="tools-part">
+                <h2><span>Tools | </span>Herramientas</h2>
+                <div class="tools">
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1280px-Visual_Studio_Code_1.35_icon.svg.png"
+                            alt="">
+                        <h3>Visual Code</h3>
+                    </div>
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png"
+                            alt="">
+                        <h3>GitHub</h3>
+                    </div>
+                    <div>
+                        <img src="https://images.icon-icons.com/2415/PNG/512/git_original_logo_icon_146509.png"
+                            alt="">
+                        <h3>Git</h3>
+                    </div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1280px-Laravel.svg.png"
+                            alt="">
+                        <h3>Laravel</h3>
+                    </div>
+                    <div>
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/webpack-icon.png"
+                            alt="">
+                        <h3>Webpack</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="briefcase" id="briefcase">
+        <div class="briefcase-section container">
+            <h2><span>Briefcase | </span> Portafolio</h2>
+            <div class="briefcase-grid">
+                <div>
+                    <a href="https://reloj-digital-maxc.netlify.app/"><img
+                            src="img/reloj-digital.jpeg"
+                            alt=""></a>
+                </div>
+                <div>
+                    <a href="https://weather-app-maxc.netlify.app/"><img
+                            src="img/wather-app.png"
+                            alt=""></a>
+                </div>
+                
+            </div>
+        </div>
     </section>
     
 </body>
